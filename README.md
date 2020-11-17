@@ -4,7 +4,7 @@
 3. Schemat strony:<br>
   a. Home (opis) - <b>SyntaxError: invalid syntax</b><br>
   b. About (opis) - <b>Error: 404</b><br>
-4. Założenia techniczne
+4. Założenia techniczne<br>
   a. Baza danych - tak<br>
   b. Framework - tak<br>
 5. Bazujące na tutorialu, szablonie (link) - null
