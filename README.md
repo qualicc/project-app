@@ -13,3 +13,10 @@
   b) dashboard (admin access) - true<br>
   c) dodawanie nowych artykułów - true<br>
   d) koszyk - true<br>
+
+TODO:
+-łączenie backendu z frontendem
+-koszyk
+-dane użytkownika 
+
+Inspiracja allegro
