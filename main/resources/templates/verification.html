@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container"></div>
+<h3 th:text="${title}">TITLE</h3>
+<p>Than you for signing up. Please click on the link to verify your email address</p>
+<a th:href="${link}" th:text="${link}">LINK</a>
+</body>
+</html>
