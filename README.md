@@ -24,7 +24,7 @@ Projetk Jest realizowany za pomocą:
 #### Testy
 * JUnit
 * Mockito
-## Baza Danych
+### Baza Danych
 * MySql
 ### Front-End
 * JS
