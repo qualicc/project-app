@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <link th:href="@{/css/style.css}" type="text/css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #3e3e3e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div th:fragment="content">
+    <form class="size center" name="f" th:action="@{/login}" method="post">
+        <div class="alert alert-info text-center" th:if="${message}" th:text="${message}"></div>
+        <fieldset>
+            <legend>Please Login</legend>
+            <div th:if="${param.error}" class="alert alert-danger text-center">
+                Invalid username or password.
+            </div>
+            <div th:if="${param.logout}" class="alert alert-success text-center">
+                You have been logged out.
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-w">Email address</label>
+                <input type="email" class="form-control " id="email" aria-describedby="emailHelp" name="username"
+                       required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="text-w">Password</label>
+                <input type="password" class="form-control " id="password" name="password" required>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="remember-me" name="remember-me">
+                <label class="form-check-label" for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+</div>
+<br>
+<div class="center">
+    <p >You do not have an account?<a th:href="@{/sign-up}"> Sign up</a></p>
+    <button class="btn btn-outline-primary"><a th:href="@{/main-page}">Back to home page</a></button>
+</div>
+</body>
+</html>

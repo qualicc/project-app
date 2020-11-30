@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    text-align: center;
+}
+
+.size{
+    width: 50vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-w{
+    font-weight: bold;
+}
